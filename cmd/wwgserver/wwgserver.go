@@ -13,14 +13,14 @@ const (
 
 func main() {
 
-	http.HandleFunc("/", handler)
+	http.HandleFunc("/", HelloWorldHandler)
 
 	addr := fmt.Sprintf("%s:%d", hostname, port)
 	log.Printf("Starting server on %s\n", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello user!")
+func HelloWorldHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Hello world!")
 	log.Println("The user called to say hello.")
 }
