@@ -21,6 +21,6 @@ func main() {
 }
 
 func HelloWorldHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello world!")
+	fmt.Fprintln(w, "Hello world!!")
 	log.Println("The user called to say hello.")
 }
