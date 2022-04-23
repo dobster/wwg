@@ -6,5 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
-      - run: go test github.com/wwg/cmd/wwgserver
+      - run: go test -v ./...
 
