@@ -24,7 +24,7 @@ func TestHelloWorld(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	want := "Hello world!\n"
+	want := "Hello world!!\n"
 	if fmt.Sprintf("%s", got) != want {
 		t.Fatalf("Expecting %q, got %q", want, got)
 	}
